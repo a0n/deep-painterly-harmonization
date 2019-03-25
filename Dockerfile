@@ -12,3 +12,5 @@ RUN git clone --depth 1 https://github.com/torch/distro.git $TORCH_PATH --recurs
 RUN luarocks install loadcaffe
 RUN mkdir -p $PROJECT_PATH
 WORKDIR $PROJECT_PATH
+RUN cd $WORKDIR \
+    && make clean && make
