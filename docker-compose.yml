@@ -1,0 +1,6 @@
+version: "3"
+services:
+  deep-painterly-harmonization:
+    build: .
+    volumes:
+      - "$PWD:/deep-painterly-harmonization"
